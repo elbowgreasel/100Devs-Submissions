@@ -1,0 +1,107 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+html {
+     font-size: 62.5%;
+     color: white;
+     text-align: center;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body{
+     width: 100%;
+     height: 100%;
+     background-color: rgb(95, 11, 11)
+}
+
+main {
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+section{
+     height: 90%;
+     padding: 7.5rem 0rem;
+     background-color: rgba(32, 27, 27, 0.9);
+     border-radius: 5%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.left{
+     flex-basis: 25%;
+}
+
+.right{
+     flex-basis: 70%;
+}
+
+h1{
+     font-size: 3rem;
+     margin: 0;
+}
+
+#button-container{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+#big-button{
+     width: 12rem;
+     height: 6rem;
+     font-size: 2.5rem;
+     border-radius: 10%;
+     border: .1rem solid black;
+     margin-bottom: 1rem;
+}
+
+#arrow-left, #arrow-right{
+     width: 6rem;
+     height: 3rem;
+     font-size: 1.5rem;
+     border-radius: 10%;
+     border: .1rem solid black;
+}
+
+button:hover{
+     cursor: pointer;
+}
+
+button:active {
+     background-color: rgb(194, 185, 185);
+     transform: translateY(.2rem);
+}
+
+img{
+     width: 50%;
+     height: 50%;
+}
+
